@@ -19,6 +19,9 @@ const nextConfig = {
   env: {
     NEXT_PUBLIC_API_URL: process.env.NEXT_PUBLIC_API_URL || 'https://nobroker-app-backend.onrender.com/api',
   },
+  experimental: {
+    esmExternals: 'loose'
+  }
 }
 
 export default nextConfig
